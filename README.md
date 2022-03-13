@@ -1,12 +1,19 @@
-# Trends-in-YouTube-videos
+# Housing_Market_analysis
+Downloaded median rents, home values information from zillow research data www.zillow.com/research/data/
 
-Obtained 7 months of daily trending YouTube videos data from Kaggle.
+•	Plotted home values, price to rent ratios across years for 1/2/3 bedroom's separately.\
+•	Noticed that the price/rent ratio for 3 bedroom houses has always been historically lower relative to 1 bedroom.\
+•	Studied the relationship between growth in home values & preceding period price to rent ratios extensively.\
+•	Interestingly, price/rent ratio doesn't necessarily correlate with size of the city.\
+•	There are very large cities in USA such as Chicago where home prices appear cheap relative to their rents.\
+•	Observed that there are nearly 2000 zip codes where median rents have decreased between 2010 and 2017 (in absolute terms).
 
-Performed extensive EDA and discovered insights including:-
-1) 82% of trending videos are published between Monday to Friday
-2) 38% of videos are published between 2PM & 6PM
-3) 77% of videos trended with less than 2 million views
-4) 68% of the videos that trended have 400k or less likes 
-5) 75% of the data have 2000 or less dislikes
-6) 44% of video names have at least one capitalized word
-7) Most trending videos have approximately 30 to 60 characters in their title
+Predicted percentage growth (yearly) in home values with Zillow variables & following external data:-\
+•	County unemployment rate www.kaggle.com/jayrav13/unemployment-by-county-us \
+•	State GDP data www.bea.gov   \
+•	30Y mortgage rates www.fred.stlouisfed.org/series/MORTGAGE30US    
+
+Modeling results:-\
+•	Linear Regression R2 of 38% and an RMSE of 6.5%\
+•	Random Forest R2 of 75% and an RMSE of 4.2%\
+•	Logistic Regression accuracy of 72% (Predicted >5% growth Y/N) 
